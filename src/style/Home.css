@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Elronmonospace';
+  src: local('Elronmonospace'), url(../fonts/Elronmonospace.ttf) format('ttf');
+}
+
+body {
+  background-image: url('../Images/HOME\ BG\ 1440x900.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  letter-spacing: 20px;
+  font-family: 'Elronmonospace';
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.left-container {
+  color: white;
+  display: flex;
+  flex-flow: column;
+}
+
+.home-image {
+  width: 500px;
+}
+
+.nav-bar {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+}
+
+.right-container {
+  align-items: flex-end;
+  color: black;
+  display: flex;
+  flex-flow: column wrap;
+}

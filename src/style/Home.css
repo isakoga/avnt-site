@@ -1,16 +1,17 @@
 @font-face {
   font-family: 'Elronmonospace';
-  src: local('Elronmonospace'), url(../fonts/Elronmonospace.ttf) format('ttf');
+  src: local('Elronmonospace'), url(../fonts/Elronmonospace.ttf);
 }
 
 body {
   background-image: url('../Images/HOME\ BG\ 1440x900.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: no-repeat; 
   background-position: center;
+  background-attachment: fixed;
   background-size: 100%;
   letter-spacing: 20px;
   font-family: 'Elronmonospace';
+  font-weight: 600;
 }
 
 .home-container {
@@ -18,29 +19,83 @@ body {
   justify-content: space-between;
 }
 
-.link {
+.home-link {
+  margin: 25px;
+  letter-spacing: 25px;
+}
+
+a {
+  margin: 20px;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+     -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+      -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+       -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          transition: color .2s ease-out, border-bottom-color .2s ease-out;
+    color: #8a8f8d;
+}
+
+.image-link {
+  margin-left: 200px;
 }
 
 .left-container {
   color: white;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.left-link {
+  color: white;
 }
 
 .home-image {
   width: 500px;
+  margin-top: 100px;
+}
+
+legend {
+  font-size: 12px;
+  letter-spacing: normal;
+  margin: 5px;
 }
 
 .nav-bar {
   align-items: flex-start;
   display: flex;
   flex-flow: column;
+  margin-top: 100px;
 }
 
 .right-container {
-  align-items: flex-end;
   color: black;
   display: flex;
   flex-flow: column wrap;
+  font-size: 12px;
+  height: 500px;
+  justify-content: center;
+  margin-right: 10px;
+  text-align: end;
+  width: 380px;
+}
+
+.right-link {
+  color: black;
+  margin-right: 20px;
+}
+
+.journal-image {
+  margin-top: 30px;
+  z-index: -1;
+}
+
+.journal-link {
+  margin-right: 150px;
+  padding-bottom: 50px;
 }
